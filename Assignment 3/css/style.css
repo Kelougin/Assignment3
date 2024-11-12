@@ -1,0 +1,81 @@
+body{
+    background-image: url('/img/main.jpg'); /* Sets background image */
+    background-size: cover; /* Cover to control the image */
+    height: 1250px; /* Set height of body */
+    margin: 0px; /* Gets rid of margin */
+    display: grid; /* Set body as grid container */
+    grid-template-columns: 100%; /* Column 100% so there is only one */
+    grid-template-rows: auto; /* Set grid rows to auto */
+    grid-template-areas: /* Sets the template for the grid */
+            "header"
+            "main"
+            "footer";
+}
+h1,p{
+    color: #ffffff; /* Color for text */
+}
+header{
+    display: flex; /* Set to flex container */
+    flex-direction: column; /* Place flex items in a column */
+    justify-content: flex-end; /* Moves container to the end */
+    align-items: center; /* Put items in the center */
+}
+header div p{
+    font-size: 23px; /* Set font size */
+    margin: 0px; /* Removes margin */
+    display: flex; /* Set to flex container */
+    justify-content: center; /* Justify content to the center */
+    font-family: "Roboto", sans-serif; /* Sets font */
+    font-weight: 300; /* Set font weight(thickness) */
+    word-spacing: 3px; /* word space to give a little more space */
+}
+h1{
+    margin: 0px; /* Removes margin */
+    font-size: 150px; /* Set font size */
+    font-family: "Dancing Script", serif; /* sets font */
+    word-spacing: 25px; /* Word spacing for title */
+    padding-left: 16px; /* 16px padding on left side */
+    font-weight: 400; /* Set font weight(thickness) */
+}
+main{
+    display: flex; /* Set to flex container */
+    justify-content: center; /* Justify content to the center */
+    height: 500px; /* Set height of main to 500px */
+}
+main div p{
+    display: flex; /* Set to flex container */
+    justify-content: center; /* Justify content to the center */
+    margin: 0px; /* Removes margin */
+    font-size: 45px; /* Set font size */
+    padding-top: 2%; /* 2% padding on top */
+    font-family: "Noto Sans JP", sans-serif; /* Sets font */
+    font-weight: 200; /* Set font weight(thickness) */
+    letter-spacing: 45px; /* Space between letters 45px */
+    padding-left: 7%; /* padding 7% on the left side */
+}
+footer{
+    display: flex; /* Set to flex container */
+    flex-direction: column; /* Place flex items in a column */
+    align-items: center; /* Put items in the center */
+    justify-content: flex-end; /* Justify content to end of flex box */
+
+}
+footer > div > p{
+    display: flex; /* Set to flex container */
+    justify-content: center; /* Justify content to the center */
+    margin: 2px; /* Set margin to 2 pixels */
+    font-family: "Hepta Slab", serif; /* Sets font */
+    font-size: 14px; /* Set font size */
+    font-weight: 400; /* Set font weight(thickness) */
+}
+.copy{
+    font-family: "Josefin Slab", serif; /* Sets font */
+    display: flex; /* Set to flex container */
+    align-items: flex-end; /* Put items at flex end */
+    padding-left: 6px; /* Padding on left 6px for space */
+    padding-right: 6px; /* Padding on right 6px for space */
+    font-size: 12px; /* Set font size */
+}
+.last{
+    font-size: 10px; /* Set font size */
+}
